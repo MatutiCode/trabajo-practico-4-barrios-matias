@@ -7,6 +7,8 @@ const app = express();
 
 app.use(express.json());
 
+app.use("/api", movieRoutes);
+
 try {
   await db.authenticate();
   console.log(" Conexión a la base de datos establecida con éxito.");
