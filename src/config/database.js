@@ -1,9 +1,9 @@
 import { Sequelize } from "sequelize";
 
-const db = Sequelize("movies", "root", "", {
+const db = new Sequelize("movies", "root", "", {
   host: "localhost",
   dialect: "mysql",
-  loggin: false,
+  logging: false,
 });
 
 export default db;
